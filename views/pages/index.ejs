@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head') %>
+</head>
+
+<body>
+    <header>
+        <%- include('../partials/header') %>
+    </header>
+
+    <main class="flex-space">
+        <a href="/books">Book Database</a>
+
+        <form id="addbook" action="/add" method="post">
+            <input type="text" name="name" placeholder="Book Title">
+            <input type="text" name="genre" placeholder="Book Genre">
+            <button type="submit">
+            <i class="las la-plus"></i>
+            </button>
+        </form>
+
+        <form id="deletebook" action="/delete" method="post">
+            <input type="text" name="name" placeholder="Book Title">
+            <button type="submit">
+            <i class="las la-times"></i>
+            </button>
+        </form>
+
+        <form id="editbook" action="/edit" method="post">
+            <input type="text" name="editname" placeholder="Old Book Name">
+            <input type="text" name="newname" placeholder="New Book Name">
+            <button type="submit">
+            <i class="las la-minus"></i>
+            </button>
+        </form>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer') %>
+    </footer>
+
+</body>
+</html>
