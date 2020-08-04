@@ -42,8 +42,7 @@ app.get('/books', function (req, res) {
     // Find data in books collection
     db.collection('books').find({}).toArray(function (err, result) {
         // Turn array into a JSON string for logging
-        //result = JSON.stringify(result);
-        //console.log("Book Collection:" + result);
+        console.log("Book Collection: " + JSON.stringify(result));
     // Show books page
     res.render('pages/books', {
             bookdetails: result

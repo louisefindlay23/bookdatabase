@@ -14,10 +14,11 @@
         <a href="/books">Book Database</a>
 
         <form id="addbook" action="/add" method="post">
-            <input type="text" name="name" placeholder="Book Title">
-            <input type="text" name="genre" placeholder="Book Genre">
-            <button type="submit">
-            <i class="las la-plus"></i>
+            <input type="text" id="input-name" name="name" placeholder="Book Title">
+            <label for="input-name">Book Name</label>
+            <input type="text" id="input-genre" name="genre" placeholder="Book Genre">
+            <label for="input-genre">Book Genre</label>
+            <button type="submit" value="Add">Add
             </button>
         </form>
 
