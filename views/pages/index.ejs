@@ -11,29 +11,35 @@
     </header>
 
     <main class="flex-space">
-        <a href="/books">Book Database</a>
-
+        <h2>Add Book to Database</h2>
         <form id="addbook" action="/add" method="post">
             <input type="text" id="input-name" name="name" placeholder="Book Title">
             <label for="input-name">Book Name</label>
             <input type="text" id="input-genre" name="genre" placeholder="Book Genre">
             <label for="input-genre">Book Genre</label>
-            <button type="submit" value="Add">Add
+            <button type="submit" value="Add">
+                Add Book
+                <i class="las la-plus"></i>
             </button>
         </form>
 
+        <h2>Delete Book From Database</h2>
         <form id="deletebook" action="/delete" method="post">
-            <input type="text" name="name" placeholder="Book Title">
-            <button type="submit">
-            <i class="las la-times"></i>
+            <input type="text" id="input-name" name="name" placeholder="Book Title">
+            <label for="input-name">Book Name</label>
+            <button type="submit" value="Delete">
+                Delete Book
+                <i class="las la-times"></i>
             </button>
         </form>
 
+        <h2>Edit A Book in the Database</h2>
         <form id="editbook" action="/edit" method="post">
-            <input type="text" name="editname" placeholder="Old Book Name">
-            <input type="text" name="newname" placeholder="New Book Name">
-            <button type="submit">
-            <i class="las la-minus"></i>
+            <input type="text" id="input-editname" name="editname" placeholder="Old Book Name">
+            <input type="text" id="input-newname" name="newname" placeholder="New Book Name">
+            <button type="submit" value="Edit">
+                Edit Book
+                <i class="las la-minus"></i>
             </button>
         </form>
     </main>
